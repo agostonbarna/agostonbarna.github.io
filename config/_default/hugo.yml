@@ -1,0 +1,43 @@
+baseURL: http://localhost/
+title: "Barna's blog"
+languageCode: en-us
+paginate: 20
+params:
+  author: Barnabás Ágoston
+  info:
+    - Software Engineer
+    - CLI Enthusiast
+  keywords: blog,software-engineer,developer,cli
+  colorScheme: auto
+  customSCSS:
+    - scss/extra.scss
+  social:
+    - name: Github
+      icon: fa-brands fa-github fa-2x
+      weight: 1
+      url: https://github.com/agostonbarna
+    - name: RSS
+      icon: fa-solid fa-rss fa-2x
+      weight: 2
+      url: https://agostonbarna.github.io/posts/index.xml
+      rel: alternate
+      type: application/rss+xml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # makes it possibles to mix markdown and nested shortcodes within a shortcode, still safe as I own the content
+    # parser:
+    #   attribute:
+    #     block: true # enable inline classes, e.g. {.class1 .class2}
+
+  highlight:
+    style: onedark
+    tabWidth: 2
+menu:
+  main:
+    - name: Posts
+      weight: 1
+      url: /posts
+module:
+  imports:
+    - path: github.com/luizdepra/hugo-coder

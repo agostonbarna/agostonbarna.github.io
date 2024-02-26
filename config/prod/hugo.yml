@@ -1,0 +1,5 @@
+baseURL: https://agostonbarna.github.io/
+params:
+  umami:
+    siteID: e1c84693-afd2-4266-9c8e-2dede378f818
+    scriptURL: https://analytics.eu.umami.is/script.js
