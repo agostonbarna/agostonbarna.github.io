@@ -1,0 +1,38 @@
+baseURL: https://agostonbarna.github.io/
+title: '>_'
+languageCode: en-us
+paginate: 20
+params:
+  author: Barnabás Ágoston
+  info:
+    - Software Engineer
+    - CLI Enthusiast
+  keywords: blog,software-engineer,developer,cli
+  colorScheme: auto
+  customSCSS:
+    - scss/extra.scss
+  social:
+    - name: Github
+      icon: fa-brands fa-github fa-2x
+      weight: 1
+      url: https://github.com/agostonbarna
+    - name: RSS
+      icon: fa-solid fa-rss fa-2x
+      weight: 2
+      url: https://agostonbarna.github.io/index.xml
+      rel: alternate
+      type: application/rss+xml
+  cloudflare:
+    token: c12beec8092a4d2c851dcacc07157a37
+markup:
+  highlight:
+    style: onedark
+    tabWidth: 2
+menu:
+  main:
+    - name: Blog
+      weight: 1
+      url: /posts
+module:
+  imports:
+    - path: github.com/luizdepra/hugo-coder
