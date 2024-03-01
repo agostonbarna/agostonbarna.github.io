@@ -335,7 +335,7 @@ I try to cover the basics here with some examples.
 
   command:
   ```sh
-  <input.json jq 'map(.a)'
+  <input.json jq 'map(.b)'
   ```
   output:
   ```json
