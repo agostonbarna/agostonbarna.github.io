@@ -25,6 +25,9 @@ params:
   cloudflare:
     token: c12beec8092a4d2c851dcacc07157a37
 markup:
+  goldmark:
+    renderer:
+      unsafe: true # makes it possibles to mix markdown and nested shortcodes within a shortcode, still safe as I own the content
   highlight:
     style: onedark
     tabWidth: 2

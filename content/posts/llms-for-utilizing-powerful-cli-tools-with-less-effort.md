@@ -10,6 +10,8 @@ Some of the CLI tools I also mentioned my [previous blog post](../programmatic-d
 
 My key takeaways so far: LLMs can help to break down the initial barrier for CLI tools with a steeper learning curve, speed up the coding process, and give us fresh ideas. It seems to me though that the tested LLMs are better at understanding and explaining code than writing it, and with increased complexity and niche topics the result can be a hit or miss. It will sometimes generate just the code we were looking for on the first try, but other times, with the same confidence, it will generate buggy code that won't compile even after claiming that it fixed the bug. So I wouldn't blindly trust the code it returns without fully understanding and testing it. Splitting the complex tasks into smaller ones, being more specific in what we want, and doing a few iterations often helps if the answer isn't good enough.
 
+{{< details "Examples:" >}}
+
 ## jq
 
 ### avg
@@ -1306,3 +1308,5 @@ Sample standard deviation: 3.92
 * Mostly good explanation.
 {{< /tab >}}
 {{< /tabgroup >}}
+
+{{< /details >}}
