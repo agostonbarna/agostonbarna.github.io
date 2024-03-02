@@ -1,14 +1,32 @@
 ---
 title: "LLMs for utilizing powerful CLI tools with less effort"
-date: 2024-02-28
+date: 2024-03-02
 draft: false
 ---
 
-Some of the CLI tools I also mentioned my [previous blog post](../programmatic-data-crunching-with-cli-tools/) such as `jq` and `awk` used to take a while to pick up in the past due to their special query syntax and peculiar logic. I was curious about how [LLMs (Large Language Models)](https://en.wikipedia.org/wiki/Large_language_model) such as ChatGPT (GPT3.5 and GPT4) and Gemini (1.0 Pro and 1.0 Ultra) would measure up for tasks like generating and explaining scripts using these tools, so I put them to a little test. Take the examples and observations below with a grain of salt though, as this test focuses on a specific use-case, it covers only a few tasks using a small set of data processing CLI tools, and uses the particular LLM models that were available to me as of writing.
+Some of the CLI tools I also mentioned my [previous blog post](../programmatic-data-crunching-with-cli-tools/) such as `jq` and `awk` used to take a while to pick up in the past due to their special query syntax and peculiar logic. I was curious about how [LLMs (Large Language Models)](https://en.wikipedia.org/wiki/Large_language_model) such as ChatGPT (GPT-3.5 and GPT-4) and Gemini (1.0 Pro and 1.0 Ultra) would measure up for tasks like generating and explaining scripts using these tools, so I put them to a little test. 
+
+**NOTE:** Take the examples and observations below with a grain of salt though, as this test focuses on a specific use-case, it covers only a few tasks using a small set of data processing CLI tools, and uses the particular LLM models that were available to me as of writing, but there are many more out there.
 
 <!--more-->
 
 My key takeaways so far: LLMs can help to break down the initial barrier for CLI tools with a steeper learning curve, speed up the coding process, and give us fresh ideas. It seems to me though that the tested LLMs are better at understanding and explaining code than writing it, and with increased complexity and niche topics the result can be a hit or miss. It will sometimes generate just the code we were looking for on the first try, but other times, with the same confidence, it will generate buggy code that won't compile even after claiming that it fixed the bug. So I wouldn't blindly trust the code it returns without fully understanding and testing it. Splitting the complex tasks into smaller ones, being more specific in what we want, and doing a few iterations often helps if the answer isn't good enough.
+
+**NOTE**: I used the **web UI** of these LLMs for **`jq` and `awk` code generation and explanation**. There is also a separate pricing model for the API that works on a pay-as-you-go basis, and reportedly has its own pros-and-cons and limitations. Also, there is some debate whether the reported context window, rate limit, and other properties are accurate and these are tweaked from time to time, even for the same model/version! The table was last updated on **2023-03-02**.
+
+|                    | ChatGPT<br>GPT-3.5                 | ChatGPT Plus<br>GPT-4               | Gemini<br>1.0 Pro | Gemini Advanced<br>1.0 Ultra |
+| ------------------ | ---------------------------------- | ----------------------------------- | ----------------- | ---------------------------- |
+| Code generation    | TODO:                              | TODO:                               | TODO:             | TODO:                        |
+| Code explanation   | TODO:                              | TODO:                               | TODO:             | TODO:                        |
+| Context window     | 8K tokens                          | 32K tokens                          | 32K tokens        | 32K tokens                   |
+| Knowledge cutoff   | 2022-01                            | 2023-04                             | 2024-03           | 2024-03                      |
+| Response time      | TODO:                              | TODO:                               | TODO:             | TODO:                        |
+| Message rate limit | depends on load and usage patterns | 20-60 / 3 hours (may vary per user) | TODO:             | TODO:                        |
+| Monthly cost       | free                               | $20 + tax (no trial)                | free              | $20 + tax (2 month trial)    |
+
+<br>
+
+Some concrete examples can be found below for those who are interested. It's a long read due to the verbose output of the 4 tested LLM models with my observations, multiplied by the 3 examples for 2 different CLI tools, so buckle up.
 
 {{< details "Examples:" >}}
 
