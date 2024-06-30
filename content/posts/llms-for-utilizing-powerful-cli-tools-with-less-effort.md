@@ -45,7 +45,7 @@ I used the web clients for the tests and comparison, but there is also a separat
 **My key takeaways so far:**
 * LLMs can help to break down the initial barrier for CLI tools with a steeper learning curve, speed up the coding process, and give us fresh ideas. With increased complexity and niche topics the result can be a hit or miss. It will sometimes generate just the code we were looking for on the first try, but other times, with the same confidence, it will generate buggy code that fails with an error even after claiming that it fixed the bug. So I wouldn't blindly trust the code it returns without fully understanding and testing it.
 * Since LLMs doesn't actually run the generated code, the predicted output may differ from the actual output. But since it's not always accurate, I have to double-check it anyway, so besides this test, I didn't find it too useful to include the predicted output in the result. However, a sample input is quite useful, and it's much easier for LLMs to generate than for humans.
-* It seems like that the tested LLMs are better at understanding and explaining the code than writing it.
+* It seems like that the tested LLMs are better explaining code than generating it.
 * Splitting the complex tasks into smaller ones, being more specific in what we want, and doing a few iterations often helps if the generated code isn't good enough.
 * In case we don't need all the details (explanations, examples, etc.) besides the generated code, we can greatly reduce the response times by specifying to return only the code.
 
