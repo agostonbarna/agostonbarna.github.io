@@ -33,6 +33,10 @@ markup:
   highlight:
     style: onedark
     tabWidth: 2
+  tableOfContents:
+    startLevel: 2
+    endLevel: 3
+    ordered: false
 menu:
   main:
     - name: Posts
