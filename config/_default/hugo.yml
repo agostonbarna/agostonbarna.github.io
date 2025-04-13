@@ -1,7 +1,8 @@
 baseURL: http://localhost/
 title: "Barna's blog"
 languageCode: en-us
-paginate: 20
+pagination:
+  pageSize: 20
 params:
   author: Barnabás Ágoston
   info:
